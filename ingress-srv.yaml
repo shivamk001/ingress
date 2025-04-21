@@ -66,17 +66,17 @@ spec:
                 name: issuetracker-srv
                 port:
                   number: 3000
-          - path: /ticketing
+          # - path: /ticketing
+          #   pathType: Prefix
+          #   backend:
+          #     service:
+          #       name: client-srv
+          #       port:
+          #         number: 3000
+          - path: /
             pathType: Prefix
             backend:
               service:
                 name: client-srv
                 port:
                   number: 3000
-          # - path: /
-          #   pathType: Prefix
-          #   backend:
-          #     service:
-          #       name: portfolio-srv
-          #       port:
-          #         number: 3000
