@@ -73,7 +73,7 @@ spec:
           #       name: client-srv
           #       port:
           #         number: 3000
-          - path: /
+          - path: /ticketing
             pathType: Prefix
             backend:
               service:
