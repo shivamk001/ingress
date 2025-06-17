@@ -73,6 +73,20 @@ spec:
                 name: client-srv
                 port:
                   number: 3000
+          - path: /dsa
+            pathType: Prefix
+            backend:
+              service:
+                name: dsa-frontend-srv
+                port:
+                  number: 3000
+          - path: /dsaapi
+            pathType: Prefix
+            backend:
+              service:
+                name: dsa-backend-srv
+                port:
+                  number: 3000
           # - path: /portfolio
           #   pathType: Prefix
           #   backend:
